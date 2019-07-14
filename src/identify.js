@@ -1,13 +1,13 @@
-const LETTER = /[a-zA-Z]/;
-const WHITESPACE = /\s+/;
-const NUMBER = /^[0-9]+$/;
+const LETTER_REGEX = /[a-zA-Z]/;
+const WHITESPACE_REGEX = /\s+/;
+const NUMBER_REGEX = /^[0-9]+$/;
 const OPERATORS = ['+', '-', '*', '/', '%'];
 
-const isLetter = character => LETTER.test(character);
+const isLetter = character => LETTER_REGEX.test(character);
 
-const isWhitespace = character => WHITESPACE.test(character);
+const isWhitespace = character => WHITESPACE_REGEX.test(character);
 
-const isNumber = character => NUMBER.test(character);
+const isNumber = character => NUMBER_REGEX.test(character);
 
 const isOpeningParenthesis = character => character === '(';
 
